@@ -9,7 +9,6 @@ public class Main {
         if (a % 2 == 0) {
             System.out.println("el número es par ");
         }
-        ;
         return a;
     }
 
