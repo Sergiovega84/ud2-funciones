@@ -1,5 +1,9 @@
 package com.sergio_vega;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class Main {
 
     public static boolean esValido (String IBAN) {
@@ -23,9 +27,12 @@ public class Main {
     }
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Introduce IBAN para verificar: ");
+        String IBAN = br.readLine();
 
-        if (esValido( "ES98 2038 5778 9830 0076 0236")) {
+        if (esValido(IBAN)) {
             System.out.println("IBAN valido");
         }else {
             System.out.println("IBAN no vállido");
