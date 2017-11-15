@@ -16,7 +16,6 @@ public class Main {
         if (a % 2 != 0) {
             System.out.println("el número es impar ");
         }
-        return a;
     }
 
     public static void main(String[] args) throws IOException {
